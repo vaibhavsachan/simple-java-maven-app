@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    environment {
-        SBT_OPTS = "${SBT_OPTS} -Dsbt.color=false"
+    options {
+        ansiColor('xterm')
     }
     stages {
         stage('Build') {
